@@ -38,5 +38,5 @@ VOLUME ["/var/log/jenkins/","/var/log/jenkins/"]
 
 
 COPY docker-entrypoint.sh /
-ENTRYPOINT ["/docker-entrypoint.sh"]
+#ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 9080 8080
