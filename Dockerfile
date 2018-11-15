@@ -36,7 +36,7 @@ VOLUME ["/etc/ansible/","/etc/ansible/"]
 #挂载ansible和jenkins的日志目录
 VOLUME ["/var/log/jenkins/","/var/log/jenkins/"]
 
-RUN chmod +x docker-entrypoint.sh
 COPY docker-entrypoint.sh /
+RUN chmod +x docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 9080 8080
